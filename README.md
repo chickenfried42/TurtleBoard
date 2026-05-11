@@ -1,2 +1,41 @@
 # TurtleBoard
-rp2040 devboard
+The TurtleBoard is a development board based on the RP2040 chip. It features 43 pins, including most standard GPIO pins, an onboard potentiometer, and LED.<br>
+I made this board to learn PCB design and to understand the inner workings of dev boards. This was hell to figure out for the first time, but insanely rewarding and probably more educational than anything I ever did at school. 
+Front:
+<img width="934" height="422" alt="image" src="https://github.com/user-attachments/assets/639630f2-dc61-4a3e-936c-c133c592c471" />
+Back:
+<img width="764" height="423" alt="image" src="https://github.com/user-attachments/assets/887b2742-a852-49e5-8eda-a4909ff98ee0" />
+Sadly, the back has no silly drawing, which is because my KiCad kept crashing whenever I tried doing anything with it, so I left it alone out of fear of corrupting the design file or something.
+
+# Schematic
+<img width="1138" height="793" alt="image" src="https://github.com/user-attachments/assets/0638877d-36c0-4981-8f9f-4761e8b03fcd" />
+
+# PCB
+<img width="358" height="796" alt="pcb" src="https://github.com/user-attachments/assets/cd88917f-540c-4484-bfef-03e173227217" />
+<img width="413" height="812" alt="image" src="https://github.com/user-attachments/assets/0da9d649-74d9-4b9c-b905-a5009ee7c017" />
+
+
+# BOM
+|Reference                      |Quantity|Comment                    |DNP|Exclude from BOM|Exclude from Board|Footprint                                                 |Datasheet                                                                        |
+|-------------------------------|--------|---------------------------|---|----------------|------------------|----------------------------------------------------------|---------------------------------------------------------------------------------|
+|C1,C10                         |2       |1uF                        |   |                |                  |Capacitor_SMD:C_0402_1005Metric                           |~                                                                                |
+|C2,C3,C4,C5,C6,C7,C8,C9,C11,C12|10      |0.1uF                      |   |                |                  |Capacitor_SMD:C_0402_1005Metric                           |~                                                                                |
+|C13,C14                        |2       |10uF                       |   |                |                  |Capacitor_SMD:C_0603_1608Metric                           |~                                                                                |
+|C15,C16                        |2       |33pF                       |   |                |                  |Capacitor_SMD:C_0402_1005Metric                           |~                                                                                |
+|C17                            |1       |.1uF                       |   |                |                  |Capacitor_SMD:C_0402_1005Metric                           |~                                                                                |
+|D1                             |1       |LED                        |   |                |                  |LED_SMD:LED_0402_1005Metric                               |~                                                                                |
+|J1                             |1       |USB_C_Receptacle_USB2.0_14P|   |                |                  |Connector_USB:USB_C_Receptacle_HRO_TYPE-C-31-M-12         |https://www.usb.org/sites/default/files/documents/usb_type-c.zip                 |
+|J2,J3                          |2       |Conn_01x20                 |   |                |                  |Connector_PinHeader_2.54mm:PinHeader_1x20_P2.54mm_Vertical|~                                                                                |
+|J4                             |1       |Conn_01x03                 |   |                |                  |Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical|~                                                                                |
+|R1,R2                          |2       |5.1K                       |   |                |                  |Resistor_SMD:R_0402_1005Metric                            |~                                                                                |
+|R3,R4                          |2       |27                         |   |                |                  |Resistor_SMD:R_0402_1005Metric                            |~                                                                                |
+|R5,R7                          |2       |1K                         |   |                |                  |Resistor_SMD:R_0402_1005Metric                            |~                                                                                |
+|R6                             |1       |10K                        |   |                |                  |Resistor_SMD:R_0402_1005Metric                            |~                                                                                |
+|R9                             |1       |220                        |   |                |                  |Resistor_SMD:R_0402_1005Metric                            |~                                                                                |
+|RV1                            |1       |R_Potentiometer            |   |                |                  |Potentiometer_SMD:Potentiometer_Bourns_3214J_Horizontal   |~                                                                                |
+|SW1                            |1       |SW_Push                    |   |                |                  |Button_Switch_SMD:SW_Push_SPST_NO_Alps_SKRK               |~                                                                                |
+|U1                             |1       |RP2040                     |   |                |                  |Package_DFN_QFN:QFN-56-1EP_7x7mm_P0.4mm_EP3.2x3.2mm       |https://datasheets.raspberrypi.com/rp2040/rp2040-datasheet.pdf                   |
+|U2                             |1       |MCP1700x-330xxTT           |   |                |                  |Package_TO_SOT_SMD:SOT-23                                 |http://ww1.microchip.com/downloads/en/DeviceDoc/20001826D.pdf                    |
+|U3                             |1       |W25Q16JVZPIQ TR            |   |                |                  |Package_SON:Winbond_USON-8-1EP_3x2mm_P0.5mm_EP0.2x1.6mm   |https://www.winbond.com/resource-files/w25q128jv_dtr%20revc%2003272018%20plus.pdf|
+|Y1                             |1       |12MHz                      |   |                |                  |Crystal:Crystal_SMD_3225-4Pin_3.2x2.5mm                   |~                                                                                |
+JLCPCB's estimated cost is $53.58
