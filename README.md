@@ -38,3 +38,4 @@ Sadly, the back has no silly drawing, which is because my KiCad kept crashing wh
 |U2                             |1       |MCP1700x-330xxTT           |   |                |                  |Package_TO_SOT_SMD:SOT-23                                 |http://ww1.microchip.com/downloads/en/DeviceDoc/20001826D.pdf                    |
 |U3                             |1       |W25Q16JVZPIQ TR            |   |                |                  |Package_SON:Winbond_USON-8-1EP_3x2mm_P0.5mm_EP0.2x1.6mm   |https://www.winbond.com/resource-files/w25q128jv_dtr%20revc%2003272018%20plus.pdf|
 |Y1                             |1       |12MHz                      |   |                |                  |Crystal:Crystal_SMD_3225-4Pin_3.2x2.5mm                   |~                                                                                |
+JLCPCB's estimated cost is $53.58
