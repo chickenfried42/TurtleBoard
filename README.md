@@ -14,15 +14,17 @@ Sadly, the back has no silly drawing, which is because my KiCad kept crashing wh
 <img width="358" height="796" alt="pcb" src="https://github.com/user-attachments/assets/cd88917f-540c-4484-bfef-03e173227217" />
 <img width="413" height="812" alt="image" src="https://github.com/user-attachments/assets/0da9d649-74d9-4b9c-b905-a5009ee7c017" />
 
+# JLCPCB Render
+<img width="383" height="736" alt="image" src="https://github.com/user-attachments/assets/128975e8-74df-4c28-8943-2bf375c144c8" />
+
 
 # BOM
 |Reference                      |Quantity|Comment                    |Total Cost|Part #|Exclude from Board|Footprint                                                 |Datasheet                                                                        |
 |-------------------------------|--------|---------------------------|---|----------------|------------------|----------------------------------------------------------|---------------------------------------------------------------------------------|
 |C1,C10                         |2       |1uF                        |$0.04|CL05A105KA5NQNC|                  |Capacitor_SMD:C_0402_1005Metric                           |~                                                                                |
-|C2,C3,C4,C5,C6,C7,C8,C9,C11,C12|10      |0.1uF                      |$0.0825|CL05B104KO5NNNC|                  |Capacitor_SMD:C_0402_1005Metric                           |~                                                                                |
+|C2,C3,C4,C5,C6,C7,C8,C9,C11,C12,C17|10      |0.1uF                      |$0.0825|CL05B104KO5NNNC|                  |Capacitor_SMD:C_0402_1005Metric                           |~                                                                                |
 |C13,C14                        |2       |10uF                       |$0.102|CL10A106KP8NNNC|                  |Capacitor_SMD:C_0603_1608Metric                           |~                                                                                |
 |C15,C16                        |2       |33pF                       |$0.013|0402CG330J500NT|                  |Capacitor_SMD:C_0402_1005Metric                           |~                                                                                |
-|C17                            |1       |0.1uF                       |   |CL05B104KO5NNNC|                  |Capacitor_SMD:C_0402_1005Metric                           |~                                                                                |
 |D1                             |1       |LED                        |$0.332|16-213SDRC/S530-A3/TR8|                  |LED_SMD:LED_0402_1005Metric                               |~                                                                                |
 |J1                             |1       |USB_C_Receptacle_USB2.0_14P|$0.918|TYPE-C-31-M-12|                  |Connector_USB:USB_C_Receptacle_HRO_TYPE-C-31-M-12         |https://www.usb.org/sites/default/files/documents/usb_type-c.zip                 |
 |J2,J3                          |2       |Conn_01x20                 |$1.36   |2.54-1*20P直针|                  |Connector_PinHeader_2.54mm:PinHeader_1x20_P2.54mm_Vertical|~                                                                                |
